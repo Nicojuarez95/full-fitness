@@ -22,14 +22,15 @@ const CheckoutPage = () => {
   }
 
   return (
+    <>
     <div className="carrito">
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography align="center" gutterBottom variant="h4">
           Carrito
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={8} md={9} container spacing={2}>
+        <Grid item xs={12} sm={8} md={9} container spacing={3}>
           <FormRow />
         </Grid>
         <Grid item xs={12} sm={4} md={3}>
@@ -39,6 +40,26 @@ const CheckoutPage = () => {
         </Grid>
       </Grid>
     </div>
+    <footer>
+    <div class="info">
+        <p>2023 - <span class="txtRojo">FULL FITNESS</span> Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    </footer>
+</>
   );
 };
 

@@ -74,7 +74,8 @@ const products = [
 
 export default function Products() {
   return (
-    <Box sx={{ flexGrow: 1, marginTop: 8 }}>
+    <>
+    <Box sx={{ flexGrow: 1, marginTop: 8, padding:1, minHeight:"84.6vh" }}>
       <Grid item xs={12}>
           <Typography align="center" gutterBottom variant='h4'>
              Productos
@@ -90,5 +91,25 @@ export default function Products() {
         }
       </Grid>
     </Box>
+    <footer>
+    <div class="info">
+        <p>2023 - <span class="txtRojo">FULL FITNESS</span> Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    </footer>
+    </>
   );
 }

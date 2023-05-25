@@ -1,5 +1,16 @@
 import React from 'react'
 import { Link as Anchor} from 'react-router-dom';
+import nosotros from "../img/nosotros.png"
+import servicios from "../img/servicios.png"
+import f1 from "../img/f1.jpg"
+import f2 from "../img/f2.jpg"
+import f3 from "../img/f3.jpg"
+import f4 from "../img/f4.jpg"
+import f5 from "../img/f5.jpg"
+import f6 from "../img/f6.jpg"
+import e1 from "../img/e1.png"
+import e2 from "../img/e2.png"
+import e3 from "../img/e3.png"
 
 export default function Home() {
   return (
@@ -43,7 +54,7 @@ export default function Home() {
     <section id="nosotros" class="nosotros">
         <div class="fila">
             <div class="col">
-                <img src="img/nosotros.png" alt=""/>
+                <img src={nosotros} alt=""/>
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
@@ -51,7 +62,7 @@ export default function Home() {
                         01
                     </div>
                     <div class="info">
-                        <span class="frase">LA MEJOR EXPERIENCIA</span>
+                        <span class="frase">LOS MEJORES PRODUCTOS</span>
                         <h2>NOSOTROS</h2>
                     </div>
                 </div>
@@ -63,12 +74,12 @@ export default function Home() {
         <div class="fila-nosotros">
             <div class="col1">
                 <span class="frase">
-                    <span class="txtRojo">ENTRENA</span> DIFERENTE
+                    <span class="txtRojo">SENTITE</span> SALUDABLE
                 </span>
                 <h2>ENTRENA <span class="txtRojo">DE LA MEJOR FORMA</span> HOY!</h2>
             </div>
             <div class="col2">
-                <button><a class="wpp" href="https://api.whatsapp.com/send?phone=5493584401958&text=Hola!Quiero comprar la hamburgesa Smoke!">PEDÍ TU TURNO</a></button>
+                <button><a class="wpp" href="/productos">MIRÁ NUESTROS PRODUCTOS</a></button>
             </div>
         </div>
     </section>
@@ -83,15 +94,15 @@ export default function Home() {
                             02
                         </div>
                         <div class="info">
-                            <span class="frase">LA MEJOR EXPERIENCIA</span>
-                            <h2>SERVICIOS</h2>
+                            <span class="frase">LA MEJOR CALIDAD</span>
+                            <h2>PARA LO QUE NECESITES</h2>
                         </div>
                     </div>
                     <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus quod provident libero, nam corrupti, adipisci ea inventore cum aliquid asperiores pariatur harum sunt. Tempore expedita atque quos ipsum nisi.</p>
                 </div>
                 <div class="col">
-                    <img src="img/servicios.png" alt=""/>
+                    <img src={servicios} alt=""/>
                 </div>
             </div>
         </div>
@@ -100,34 +111,34 @@ export default function Home() {
                 <tr>
                     <td>
                         <i class="fa-solid fa-person-walking"></i>
-                        <h3><span class="txtRojo">Clases </span> de Fitness</h3>
+                        <h3><span class="txtRojo">Entrená </span> Fitness</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                     <td>
                         <i class="fa-solid fa-dumbbell"></i>
-                        <h3><span class="txtRojo">Clases </span> de Crossfit</h3>
+                        <h3><span class="txtRojo">Entrená </span> Crossfit</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                     <td>
                         <i class="fa-solid fa-mitten"></i>
-                        <h3><span class="txtRojo">Clases </span> de Boxeo</h3>
+                        <h3><span class="txtRojo">Entrená </span> Boxeo</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <i class="fa-solid fa-clock"></i>
-                        <h3><span class="txtRojo">Clases </span> de Enduro</h3>
+                        <h3><span class="txtRojo">Entrená </span> Enduro</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                     <td>
                         <i class="fa-solid fa-heart-circle-bolt"></i>
-                        <h3><span class="txtRojo">Clases </span> de Cardio</h3>
+                        <h3><span class="txtRojo">Entrená </span> Cardio</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                     <td>
                         <i class="fa-solid fa-bicycle"></i>
-                        <h3><span class="txtRojo">Clases </span> de Ciclismo</h3>
+                        <h3><span class="txtRojo">Entrená </span> Ciclismo</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
                     </td>
                 </tr>
@@ -139,7 +150,7 @@ export default function Home() {
     <section id="comodidades" class="comodidades">
         <div class="fila">
             <div class="col">
-                <img src="img/nosotros.png" alt=""/>
+                <img src={nosotros} alt=""/>
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
@@ -147,15 +158,15 @@ export default function Home() {
                         03
                     </div>
                     <div class="info">
-                        <span class="frase">LA MEJOR EXPERIENCIA</span>
-                        <h2>COMODIDADES</h2>
+                        <span class="frase">ENCONTRÁ TU PRODUCTO</span>
+                        <h2>PARA TU META</h2>
                     </div>
                 </div>
                 <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <ul>
-                    <li><span>PILETA</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit inventore eligendi</li>
-                    <li><span>WIFI GRATIS</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit inventore</li>
-                    <li><span>ESTACIONAMIENTO GRATIS</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit?</li>
+                    <li><span>GANAR MASA MUSCULAR</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit inventore eligendi</li>
+                    <li><span>TONIFICACIÓN</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit inventore</li>
+                    <li><span>DEFICIT CALÓRICO</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tenetur, nam cumque adipisci ratione obcaecati impedit?</li>
                 </ul>
             </div>
         </div>
@@ -175,24 +186,24 @@ export default function Home() {
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/f1.jpg" alt=""/>
+                    <img src={f1} alt=""/>
                 </div>
                 <div class="col">
-                    <img src="img/f2.jpg" alt=""/>
+                    <img src={f2} alt=""/>
                 </div>
                 <div class="col">
-                    <img src="img/f3.jpg" alt=""/>
+                    <img src={f3} alt=""/>
                 </div>
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/f4.jpg" alt=""/>
+                    <img src={f4} alt=""/>
                 </div>
                 <div class="col">
-                    <img src="img/f5.jpg" alt=""/>
+                    <img src={f5} alt=""/>
                 </div>
                 <div class="col">
-                    <img src="img/f6.jpg" alt=""/>
+                    <img src={f6} alt=""/>
                 </div>
             </div>
         </div>
@@ -212,7 +223,7 @@ export default function Home() {
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="img/e1.png" alt=""/>
+                    <img src={e1} alt=""/>
                     <div class="info">
                         <h2>Felipe</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -225,7 +236,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/e2.png" alt=""/>
+                    <img src={e2} alt=""/>
                     <div class="info">
                         <h2>PATRICIA</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -238,7 +249,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div class="col">
-                    <img src="img/e3.png" alt=""/>
+                    <img src={e3} alt=""/>
                     <div class="info">
                         <h2>Martin</h2>
                         <p>Fitness - Pilates - Yoga</p>
@@ -298,7 +309,7 @@ export default function Home() {
 
     <footer>
         <div class="info">
-            <p>2023 - <span class="txtRojo">HABITUS</span> Todos los derechos reservados</p>
+            <p>2023 - <span class="txtRojo">FULL FITNESS</span> Todos los derechos reservados</p>
             <div class="redes">
                 <a href="#">
                     <i class="fa-brands fa-facebook-f"></i>

@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <React.Fragment>
-      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
         <Toolbar>
           {/* Botón para abrir el menú hamburguesa */}
           <IconButton

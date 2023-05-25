@@ -54,7 +54,7 @@ const addToBasket= () => {
 }
 
   return (
-    <Card sx={{ maxWidth: 350 }}>
+    <Card sx={{ maxWidth: 440 }}>
       <CardHeader
         action={
           <Typography
