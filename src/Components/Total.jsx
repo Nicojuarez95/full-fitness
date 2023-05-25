@@ -13,7 +13,7 @@ export default function Total() {
       <h5> Total items: {basket?.length}</h5>
       <h5> {accounting.formatMoney(getBasketTotal(basket), "$")}</h5>
         {getBasketTotal(basket) !== 0 ? (
-          <Anchord to="/pago">
+          <Anchord>
             <Button className='pagar' variant='contained' color='secondary'>Pay</Button>
           </Anchord>
         ) : (
