@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import logo from "../images/parallax-2.png"
 import { ShoppingCart } from '@mui/icons-material';
 import { Badge } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -33,7 +32,7 @@ export default function Navbar() {
 
   return (
     <Box className='nav' sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         <Toolbar>
           <Link to="/">
             <IconButton
@@ -43,7 +42,7 @@ export default function Navbar() {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              <img src={logo} className='logo' alt="" />
+              <h3 className='titulo'>FULL FITNESS</h3>
             </IconButton>
           </Link>
 
@@ -52,7 +51,7 @@ export default function Navbar() {
             <div className="button">
              
                 <Link to="/carrito">
-                  <IconButton>
+                  <IconButton style={{ color: 'white' }}>
                       <Badge badgeContent={basket?.length} color='secondary'>
                           <ShoppingCart fontSize='large'/>
                       </Badge>

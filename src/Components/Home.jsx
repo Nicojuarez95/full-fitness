@@ -4,38 +4,13 @@ import { Link as Anchor} from 'react-router-dom';
 export default function Home() {
   return (
     <>
-    <Anchor to={"/productos"}>productos</Anchor>
     <body>
     
-    <div class="contenedor-header">
-        <header>
-            <h1>HABITUS <span class="txtRojo"></span></h1>
-            <nav id="nav">
-                <a href="#inicio" onclick="seleccionar()">inicio</a>
-                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
-                <a href="#servicios" onclick="seleccionar()">Servicios</a>
-                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
-                <a href="#galeria" onclick="seleccionar()">Galería</a>
-                <a href="#equipo" onclick="seleccionar()">Equipo</a>
-                <a href="#contacto" onclick="seleccionar()">Contacto</a>
-            </nav>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            
-            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>                
-        </header>
-    </div>
-
-   
     <section id="inicio" class="inicio">
         <div class="contenido-seccion">
             <div class="info">
                 <h2>HAZ QUE <span class="txtRojo">OCURRA</span></h2>
+                <Anchor to={"/productos"}>productos</Anchor>
                 <p>Entrenar como habito de vida!</p>
                 <a href="#nosotros" class="btn-mas">
                     <i class="fa-solid fa-circle-chevron-down"></i>

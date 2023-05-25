@@ -60,21 +60,30 @@ const products = [
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvc2WpEHDpo-vS1BVijZaRJQobNFuAfdCGhA&usqp=CAU",
       description: "Description of product 5",
     },
+    {
+      id: 6,
+      name: "product 6",
+      productType: "Shoes",
+      price: 110,
+      rating: 3,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvc2WpEHDpo-vS1BVijZaRJQobNFuAfdCGhA&usqp=CAU",
+      description: "Description of product 6",
+    },
     // Agrega más objetos de productos según sea necesario
   ];
 
 export default function Products() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, marginTop: 8 }}>
       <Grid item xs={12}>
           <Typography align="center" gutterBottom variant='h4'>
-              Products
+             Productos
           </Typography>
       </Grid>
       <Grid container spacing={1} padding={0} >
         {
             products.map(product => (
-                <Grid item xs={6} sm={6} md={4} lg={3} >
+                <Grid item xs={12} sm={6} md={4} lg={2} >
                     <Product key={product.id} product={product}/>
                 </Grid>
             ))
