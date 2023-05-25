@@ -10,7 +10,7 @@ export default function Home() {
         <div class="contenido-seccion">
             <div class="info">
                 <h2>HAZ QUE <span class="txtRojo">OCURRA</span></h2>
-                <Anchor to={"/productos"}>productos</Anchor>
+                
                 <p>Entrenar como habito de vida!</p>
                 <a href="#nosotros" class="btn-mas">
                     <i class="fa-solid fa-circle-chevron-down"></i>
