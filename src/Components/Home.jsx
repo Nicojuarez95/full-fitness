@@ -292,7 +292,7 @@ export default function Home() {
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
-                    La Carlota
+                    La Carlota, Cba
                 </div>
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
@@ -300,7 +300,7 @@ export default function Home() {
                 </div>
                 <div class="col">
                     <i class="fa-regular fa-clock"></i>
-                    Lunes a Sábado, 8:00h - 24:00h
+                    Lunes a Sábado
                 </div>
             </div>
         </div>
