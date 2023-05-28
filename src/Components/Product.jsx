@@ -66,7 +66,7 @@ const addToBasket= () => {
           </Typography>
         }
         title= {name}
-        subheader="In stock"
+        subheader="En stock"
       />
 
       <CardMedia
@@ -83,7 +83,7 @@ const addToBasket= () => {
       </CardContent>
 
       <CardActions disableSpacing>
-        <IconButton aria-label="add to Cart" onClick={addToBasket}>
+        <IconButton aria-label="Agragar al carrito" onClick={addToBasket}>
           <AddShoppingCart fontSize='large' />
         </IconButton>
 
